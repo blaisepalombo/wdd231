@@ -1,21 +1,25 @@
-import { getParkData, parkInfoLinks } from "./parkService.mjs";
+import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
 
-const parkData = getParkData();
-
-function showParkIntro(data) {
-  const introSection = document.querySelector(".intro");
-  introSection.innerHTML = `<h1>${data.fullName}</h1>
-  <p>${data.description}</p>`;
+function setParkIntro(data) {
+  const introEl = document.querySelector(".intro");
+  introEl.innerHTML = `<h1>${data.fullName}</h1>
+<p>${data.description}</p>`;
 }
 
-function showParkLinks(links) {
-  const infoSection = document.querySelector(".info");
-  const cards = links.map(mediaCardTemplate);
-  infoSection.insertAdjacentHTML("afterbegin", cards.join(""));
+function setParkInfoLinks(data) {
+  const infoEl = document.querySelector(".info");
+  const htmlArr = data.map(mediaCardTemplate);
+  infoEl.insertAdjacentHTML("afterbegin", htmlArr.join(""));
 }
 
-setHeaderFooter(parkData);
-showParkIntro(parkData);
-showParkLinks(parkInfoLinks);
+async function init() {
+  const parkData = await getParkData();
+  const links = getInfoLinks(parkData.images);
+  setHeaderFooter(parkData);
+  setParkIntro(parkData);
+  setParkInfoLinks(links);
+}
+
+init();

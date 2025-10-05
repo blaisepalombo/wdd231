@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: var(--bs-body-font-family);
+}
+
+a:link,
+a:visited {
+  color: var(--bs-link-color);
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
+}

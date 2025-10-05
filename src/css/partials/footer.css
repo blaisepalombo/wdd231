@@ -1,0 +1,37 @@
+.skip-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skip-links a {
+  position: absolute;
+  right: 20px;
+  top: -200px;
+  z-index: -1;
+  font-size: .6875rem;
+}
+
+.skip-links a:focus {
+  z-index: 9999;
+  top: 2px;
+}
+
+.media-card a {
+  color: var(--bs-black);
+  text-decoration: none;
+}
+
+.media-card a:hover {
+  color: var(--bs-crete);
+}
+
+.media-card h3 {
+  margin: .5rem 0;
+}
+
+.media-card > p {
+  color: var(--bs-grey-2);
+  font-size: .8em;
+  line-height: 1.5;
+}
