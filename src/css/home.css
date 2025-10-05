@@ -1,11 +1,13 @@
 .intro {
   padding: 1em;
+  background-image: url("../images/topo_pattern.png");
+
 }
 
 .intro > h1 {
   font-family: var(--bs-font-serif);
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .info {
@@ -13,6 +15,7 @@
   flex-direction: column;
   gap: 1em;
   padding: 1em;
+  background-image: url("../images/topo_pattern.png");
 }
 
 .info > * {

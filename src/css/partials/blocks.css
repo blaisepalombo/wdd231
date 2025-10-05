@@ -23,7 +23,7 @@
 }
 
 .media-card a:hover {
-  color: var(--bs-crete);
+  color: var(--bs-purple-2);
 }
 
 .media-card h3 {
