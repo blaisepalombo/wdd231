@@ -4,7 +4,7 @@ const park = {
   fullName: "Yellowstone National Park",
   parkCode: "yell",
   description:
-    "On March 1, 1872, Yellowstone became the first national park for everyone to enjoy the hydrothermal wonders. Millions visit each year to hike, camp, and take in the scenery.",
+    "On March 1, 1872, Yellowstone became the first national park for everyone to enjoy its unique hydrothermal wonders. Millions visit each year to camp, hike, and experience the park's beauty.",
   latitude: "44.59824417",
   longitude: "-110.5471695",
   latLong: "lat:44.59824417, long:-110.5471695",
@@ -18,7 +18,7 @@ const park = {
     emailAddresses: [
       {
         description:
-          "Contact Yellowstone's park rangers for questions, lost and found, or special permits.",
+          "Contact Yellowstone's park rangers for general questions, lost and found, or special permits.",
         emailAddress: "YELL_Information@nps.gov"
       }
     ]
@@ -48,35 +48,46 @@ const park = {
     }
   ],
   directionsInfo:
-    "Yellowstone covers 3,500 square miles in NW Wyoming (3% in Montana, 1% in Idaho). Five entrances exist, some closed in winter. Driving between entrances can take hours, so check road status before arriving.",
+    "Yellowstone covers nearly 3,500 square miles in NW Wyoming (3% in Montana, 1% in Idaho). It has five entrances, some closed in winter. Driving between entrances takes hours, so check road status before your trip.",
   directionsUrl: "http://www.nps.gov/yell/planyourvisit/directions.htm",
   images: [
-    { credit: "NPS/Jim Peaco", title: "Grand Prismatic Spring", altText: "Hot spring with bright colors", caption: "Thermophiles create the bright colors", url: "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Aurum Geyser", altText: "People watch geyser erupt", caption: "Aurum Geyser erupting", url: "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg" },
-    { credit: "NPS/Diane Renkin", title: "Black Pool", altText: "Visitor near hot spring and lake", caption: "Black Pool at West Thumb Geyser Basin", url: "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Beehive Geyser", altText: "People watch geyser erupt", caption: "Upper Geyser Basin Beehive Geyser", url: "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Wolf howling", altText: "Wolf howls on snowy field", caption: "Alpha male of Canyon wolf pack", url: "https://www.nps.gov/common/uploads/structured_data/3C7D3BD3-1DD8-B71B-0BB607F9BAAE1271.jpg" }
+    { credit: "NPS/Jim Peaco", title: "Grand Prismatic Spring", altText: "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.", caption: "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures", url: "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Aurum Geyser", altText: "A crowd of people standing along a wooden boardwalk watches a geyser erupt.", caption: "Aurum Geyser erupting", url: "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg" },
+    { credit: "NPS/Diane Renkin", title: "Black Pool", altText: "A visitor stands on a boardwalk near a hot spring and a lake.", caption: "Black Pool at the West Thumb Geyser Basin", url: "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Beehive Geyser", altText: "People on a wooden boardwalk watch a geyser erupt.", caption: "Visitors to the Upper Geyser Basin watch Beehive Geyser erupt.", url: "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Wolf howling", altText: "A wolf howls while standing on a snowy field.", caption: "Alpha male of the Canyon wolf pack", url: "https://www.nps.gov/common/uploads/structured_data/3C7D3BD3-1DD8-B71B-0BB607F9BAAE1271.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Fishing Bridge Trailside Museum", altText: "Visitors walk into a rustic, log and stone building.", caption: "The stone-and-log architecture of Fishing Bridge Trailside Museum became a prototype for park buildings all around the country", url: "https://www.nps.gov/common/uploads/structured_data/3C7D573E-1DD8-B71B-0B5C0DF5BB91D043.jpg" },
+    { credit: "NPS/Diane Renkin", title: "Great Fountain Geyser", altText: "A geyser erupting in the middle of a large pool.", caption: "Great Fountain Geyser erupts against a blue summer sky", url: "https://www.nps.gov/common/uploads/structured_data/3C7D5AB4-1DD8-B71B-0BF91CF45345ED16.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Old Faithful Geyser in winter", altText: "A crowd in front of an erupting geyser during a snowy winter day.", caption: "Winter is a magical time to watch Old Faithful Geyser erupt", url: "https://www.nps.gov/common/uploads/structured_data/3C7D610A-1DD8-B71B-0BEF676112007818.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Palette Spring", altText: "Visitors walk in front of a brightly colored, terraced landscape.", caption: "The vibrant colors of Palette Springs are formed by thermophiles—heat-loving organisms", url: "https://www.nps.gov/common/uploads/structured_data/3C7D8903-1DD8-B71B-0BA8669AEEF74379.jpg" },
+    { credit: "NPS/Peggy Olliff", title: "Bighorn sheep", altText: "Two bighorn sheep laying on the ground.", caption: "Two bighorn rams rest and chew their cud", url: "https://www.nps.gov/common/uploads/structured_data/3C7D95DD-1DD8-B71B-0BC4FA19BD72F0EC.jpg" },
+    { credit: "NPS/Diane Renkin", title: "Lower Falls from Artist Point", altText: "A river plunges into a steep, barren canyon.", caption: "Lower Falls from Artist Point", url: "https://www.nps.gov/common/uploads/structured_data/8A729E5B-B263-9C49-7AD4C4B8E70064E0.jpg" },
+    { credit: "NPS/Diane Renkin", title: "Bison herd in a thermal area", altText: "A herd of bison grazing through a barren and steaming thermal area.", caption: "Bison near Mud Volcano", url: "https://www.nps.gov/common/uploads/structured_data/8A869F85-FB2E-5EAF-11367EB2DB75963D.jpg" },
+    { credit: "NPS/Jim Peaco", title: "Grizzly bear", altText: "A grizzly bear standing on a fallen tree.", caption: "Grizzly bear in the woods", url: "https://www.nps.gov/common/uploads/structured_data/8A902498-9D11-D06D-E352C073E3E85A58.jpg" },
+    { credit: "NPS/Dave Krueger", title: "Yellowstone River", altText: "A greenish river meanders through a hilly river valley.", caption: "The Yellowstone River near Tower Fall", url: "https://www.nps.gov/common/uploads/structured_data/8AB8F1A3-D1A0-A6FB-E8E5CAA8B2937264.jpeg" }
   ],
   weatherInfo:
-    "Weather changes fast, even in one day. Summer highs can reach 70°F, then drop 20+ degrees in storms. Snow can happen any month. Bring layers and rain gear.",
+    "Yellowstone's weather can vary a lot, even in a single day. Summer highs can exceed 70°F (21°C), then drop 20+ degrees if a storm rolls through. It can snow any month, and winter lows often drop below 0°F (-18°C). Pack layers, warm jackets, and rain gear.",
   name: "Yellowstone",
   designation: "National Park"
 };
 
 const parkInfoLinks = [
-  { name: "Current Conditions ›", link: "conditions.html", image: park.images[2].url, description: "See what conditions to expect before your trip" },
-  { name: "Fees and Passes ›", link: "fees.html", image: park.images[3].url, description: "Learn about available fees and passes" },
-  { name: "Visitor Centers ›", link: "visitor_centers.html", image: park.images[4].url, description: "Learn about visitor centers" }
+  { name: "Current Conditions ›", link: "conditions.html", image: park.images[2].url, description: "See what conditions to expect in the park before leaving on your trip!" },
+  { name: "Fees and Passes ›", link: "fees.html", image: park.images[3].url, description: "Learn about the fees and passes that are available." },
+  { name: "Visitor Centers ›", link: "visitor_centers.html", image: park.images[9].url, description: "Learn about the visitor centers in the park." }
 ];
 
 const baseUrl = "https://developer.nps.gov/api/v1/";
 const apiKey = import.meta.env.VITE_NPS_API_KEY;
 
 async function getJson(url) {
-  const options = { method: "GET", headers: { "X-Api-Key": apiKey } };
-  const response = await fetch(baseUrl + url, options);
-  if (!response.ok) throw new Error("Network response not ok");
-  return await response.json();
+  const response = await fetch(baseUrl + url, {
+    method: "GET",
+    headers: { "X-Api-Key": apiKey }
+  });
+  if (!response.ok) throw new Error("response not ok");
+  return response.json();
 }
 
 export function getInfoLinks(data) {
@@ -89,4 +100,14 @@ export function getInfoLinks(data) {
 export async function getParkData() {
   const parkData = await getJson("parks?parkCode=yell");
   return parkData.data[0];
+}
+
+export async function getParkAlerts(code) {
+  const parkData = await getJson(`alerts?parkCode=${code}`);
+  return parkData.data;
+}
+
+export async function getParkVisitorCenters(code) {
+  const parkData = await getJson(`visitorcenters?parkCode=${code}`);
+  return parkData.data;
 }
