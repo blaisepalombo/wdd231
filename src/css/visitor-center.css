@@ -1,0 +1,98 @@
+.vc-name {
+  border-bottom: 1px solid var(--bs-gray-400);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.vc-name svg {
+  width: 1em;
+  height: 1em;
+}
+
+.vc-info figure {
+  margin: 1em 2.5em;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.vc-info figcaption {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.vc-info figcaption > span {
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.vc-details-list svg,
+.vc-gallery svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+  fill: var(--bs-gray-700);
+}
+
+.vc-details-list summary {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+}
+
+#vcAmenities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#vcAmenities li {
+  margin-bottom: 0.8em;
+}
+
+.vc-gallery > h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+
+.vc-gallery ul {
+  list-style: none;
+  display: flex;
+  gap: 0.8em;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.vc-gallery img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.vc-details-list summary::marker,
+.vc-details-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.vc-details-list summary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../images/arrow.svg");
+  background-size: 1.25rem 1.25rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.vc-details-list details[open] > summary::after {
+  transform: rotate(180deg);
+}

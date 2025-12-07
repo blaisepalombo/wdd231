@@ -4,110 +4,109 @@ const park = {
   fullName: "Yellowstone National Park",
   parkCode: "yell",
   description:
-    "On March 1, 1872, Yellowstone became the first national park for everyone to enjoy its unique hydrothermal wonders. Millions visit each year to camp, hike, and experience the park's beauty.",
+    "Yellowstone became the first national park in 1872! Today, millions visit every year to hike, camp, and see the geothermal features.",
   latitude: "44.59824417",
   longitude: "-110.5471695",
-  latLong: "lat:44.59824417, long:-110.5471695",
-  states: "ID,MT,WY",
+  states: "ID, MT, WY",
   contacts: {
     phoneNumbers: [
-      { phoneNumber: "307-344-7381", description: "", extension: "", type: "Voice" },
-      { phoneNumber: "307-344-2014", description: "", extension: "", type: "Fax" },
-      { phoneNumber: "307-344-2386", description: "", extension: "", type: "TTY" }
+      { phoneNumber: "307-344-7381", type: "Voice" },
+      { phoneNumber: "307-344-2014", type: "Fax" },
+      { phoneNumber: "307-344-2386", type: "TTY" }
     ],
     emailAddresses: [
       {
-        description:
-          "Contact Yellowstone's park rangers for general questions, lost and found, or special permits.",
+        description: "General park questions, lost & found, permits",
         emailAddress: "YELL_Information@nps.gov"
       }
     ]
   },
   addresses: [
     {
-      postalCode: "82190",
+      line1: "2 Officers Row",
+      line2: "Yellowstone National Park Headquarters",
       city: "Yellowstone National Park",
       stateCode: "WY",
-      countryCode: "US",
-      provinceTerritoryCode: "",
-      line1: "2 Officers Row",
-      type: "Physical",
-      line2: "Yellowstone National Park Headquarters",
-      line3: ""
+      postalCode: "82190",
+      type: "Physical"
     },
     {
-      postalCode: "82190-0168",
+      line1: "PO Box 168",
       city: "Yellowstone National Park",
       stateCode: "WY",
-      countryCode: "US",
-      provinceTerritoryCode: "",
-      line1: "PO Box 168",
-      type: "Mailing",
-      line2: "",
-      line3: ""
+      postalCode: "82190-0168",
+      type: "Mailing"
     }
   ],
   directionsInfo:
-    "Yellowstone covers nearly 3,500 square miles in NW Wyoming (3% in Montana, 1% in Idaho). It has five entrances, some closed in winter. Driving between entrances takes hours, so check road status before your trip.",
+    "Yellowstone covers ~3,500 sq miles in NW Wyoming (tiny parts in MT & ID). Check road status before heading in!",
   directionsUrl: "http://www.nps.gov/yell/planyourvisit/directions.htm",
   images: [
-    { credit: "NPS/Jim Peaco", title: "Grand Prismatic Spring", altText: "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.", caption: "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures", url: "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Aurum Geyser", altText: "A crowd of people standing along a wooden boardwalk watches a geyser erupt.", caption: "Aurum Geyser erupting", url: "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg" },
-    { credit: "NPS/Diane Renkin", title: "Black Pool", altText: "A visitor stands on a boardwalk near a hot spring and a lake.", caption: "Black Pool at the West Thumb Geyser Basin", url: "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Beehive Geyser", altText: "People on a wooden boardwalk watch a geyser erupt.", caption: "Visitors to the Upper Geyser Basin watch Beehive Geyser erupt.", url: "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Wolf howling", altText: "A wolf howls while standing on a snowy field.", caption: "Alpha male of the Canyon wolf pack", url: "https://www.nps.gov/common/uploads/structured_data/3C7D3BD3-1DD8-B71B-0BB607F9BAAE1271.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Fishing Bridge Trailside Museum", altText: "Visitors walk into a rustic, log and stone building.", caption: "The stone-and-log architecture of Fishing Bridge Trailside Museum became a prototype for park buildings all around the country", url: "https://www.nps.gov/common/uploads/structured_data/3C7D573E-1DD8-B71B-0B5C0DF5BB91D043.jpg" },
-    { credit: "NPS/Diane Renkin", title: "Great Fountain Geyser", altText: "A geyser erupting in the middle of a large pool.", caption: "Great Fountain Geyser erupts against a blue summer sky", url: "https://www.nps.gov/common/uploads/structured_data/3C7D5AB4-1DD8-B71B-0BF91CF45345ED16.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Old Faithful Geyser in winter", altText: "A crowd in front of an erupting geyser during a snowy winter day.", caption: "Winter is a magical time to watch Old Faithful Geyser erupt", url: "https://www.nps.gov/common/uploads/structured_data/3C7D610A-1DD8-B71B-0BEF676112007818.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Palette Spring", altText: "Visitors walk in front of a brightly colored, terraced landscape.", caption: "The vibrant colors of Palette Springs are formed by thermophiles—heat-loving organisms", url: "https://www.nps.gov/common/uploads/structured_data/3C7D8903-1DD8-B71B-0BA8669AEEF74379.jpg" },
-    { credit: "NPS/Peggy Olliff", title: "Bighorn sheep", altText: "Two bighorn sheep laying on the ground.", caption: "Two bighorn rams rest and chew their cud", url: "https://www.nps.gov/common/uploads/structured_data/3C7D95DD-1DD8-B71B-0BC4FA19BD72F0EC.jpg" },
-    { credit: "NPS/Diane Renkin", title: "Lower Falls from Artist Point", altText: "A river plunges into a steep, barren canyon.", caption: "Lower Falls from Artist Point", url: "https://www.nps.gov/common/uploads/structured_data/8A729E5B-B263-9C49-7AD4C4B8E70064E0.jpg" },
-    { credit: "NPS/Diane Renkin", title: "Bison herd in a thermal area", altText: "A herd of bison grazing through a barren and steaming thermal area.", caption: "Bison near Mud Volcano", url: "https://www.nps.gov/common/uploads/structured_data/8A869F85-FB2E-5EAF-11367EB2DB75963D.jpg" },
-    { credit: "NPS/Jim Peaco", title: "Grizzly bear", altText: "A grizzly bear standing on a fallen tree.", caption: "Grizzly bear in the woods", url: "https://www.nps.gov/common/uploads/structured_data/8A902498-9D11-D06D-E352C073E3E85A58.jpg" },
-    { credit: "NPS/Dave Krueger", title: "Yellowstone River", altText: "A greenish river meanders through a hilly river valley.", caption: "The Yellowstone River near Tower Fall", url: "https://www.nps.gov/common/uploads/structured_data/8AB8F1A3-D1A0-A6FB-E8E5CAA8B2937264.jpeg" }
+    { title: "Grand Prismatic Spring", url: "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" },
+    { title: "Aurum Geyser", url: "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg" },
+    { title: "Black Pool", url: "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg" },
+    { title: "Beehive Geyser", url: "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg" },
+    { title: "Wolf howling", url: "https://www.nps.gov/common/uploads/structured_data/3C7D3BD3-1DD8-B71B-0BB607F9BAAE1271.jpg" }
   ],
   weatherInfo:
-    "Yellowstone's weather can vary a lot, even in a single day. Summer highs can exceed 70°F (21°C), then drop 20+ degrees if a storm rolls through. It can snow any month, and winter lows often drop below 0°F (-18°C). Pack layers, warm jackets, and rain gear.",
-  name: "Yellowstone",
-  designation: "National Park"
+    "Weather changes fast in Yellowstone. Even summer days can swing 20°F in an hour! Bring layers & rain gear."
 };
 
 const parkInfoLinks = [
-  { name: "Current Conditions ›", link: "conditions.html", image: park.images[2].url, description: "See what conditions to expect in the park before leaving on your trip!" },
-  { name: "Fees and Passes ›", link: "fees.html", image: park.images[3].url, description: "Learn about the fees and passes that are available." },
-  { name: "Visitor Centers ›", link: "visitor_centers.html", image: park.images[9].url, description: "Learn about the visitor centers in the park." }
+  {
+    name: "Current Conditions ›",
+    link: "conditions.html",
+    image: park.images[2].url,
+    description: "Check the park conditions before heading out."
+  },
+  {
+    name: "Fees and Passes ›",
+    link: "fees.html",
+    image: park.images[3].url,
+    description: "Info on passes and entrance fees."
+  },
+  {
+    name: "Visitor Centers ›",
+    link: "visitor-center.html",
+    image: park.images[4].url,
+    description: "Visitor center locations and info."
+  }
 ];
 
 const baseUrl = "https://developer.nps.gov/api/v1/";
 const apiKey = import.meta.env.VITE_NPS_API_KEY;
 
-async function getJson(url) {
-  const response = await fetch(baseUrl + url, {
-    method: "GET",
+async function getJson(endpoint) {
+  const res = await fetch(baseUrl + endpoint, {
     headers: { "X-Api-Key": apiKey }
   });
-  if (!response.ok) throw new Error("response not ok");
-  return response.json();
+  if (!res.ok) throw new Error("Failed to fetch data 😬");
+  return await res.json();
 }
 
 export function getInfoLinks(data) {
-  return parkInfoLinks.map((item, index) => {
-    item.image = data[index + 2].url;
+  return parkInfoLinks.map((item, i) => {
+    item.image = data[i + 2].url;
     return item;
   });
 }
 
 export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=yell");
-  return parkData.data[0];
+  const json = await getJson("parks?parkCode=yell");
+  return json.data[0];
 }
 
 export async function getParkAlerts(code) {
-  const parkData = await getJson(`alerts?parkCode=${code}`);
-  return parkData.data;
+  const json = await getJson(`alerts?parkCode=${code}`);
+  return json.data;
 }
 
 export async function getParkVisitorCenters(code) {
-  const parkData = await getJson(`visitorcenters?parkCode=${code}`);
-  return parkData.data;
+  const json = await getJson(`visitorcenters?parkCode=${code}`);
+  return json.data;
+}
+
+export async function getParkVisitorCenterDetails(id) {
+  const json = await getJson(`visitorcenters?id=${id}`);
+  return json.data[0];
 }
